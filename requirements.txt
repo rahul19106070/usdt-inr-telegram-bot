@@ -1,0 +1,5 @@
+python-telegram-bot==20.7
+phonenumbers==8.13.27
+razorpay==1.3.0
+sqlite3
+asyncio
