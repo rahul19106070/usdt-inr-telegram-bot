@@ -41,8 +41,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
 # Bot token from BotFather
-BOT_TOKEN = "8454139319:AAHWFilxWVgmyzwnjzMUlW7GPoScvqPf0fk"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Database configuration
 DATABASE_PATH = "usdt_exchange.db"
